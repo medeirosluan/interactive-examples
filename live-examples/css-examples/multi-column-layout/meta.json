@@ -14,13 +14,6 @@
       "title": "CSS Demo: column-fill",
       "type": "css"
     },
-    "columnGap": {
-      "cssExampleSrc": "./live-examples/css-examples/multi-column-layout/column-gap.css",
-      "exampleCode": "./live-examples/css-examples/multi-column-layout/column-gap.html",
-      "fileName": "column-gap.html",
-      "title": "CSS Demo: column-gap",
-      "type": "css"
-    },
     "columnRule": {
       "cssExampleSrc": "./live-examples/css-examples/multi-column-layout/column-rule.css",
       "exampleCode": "./live-examples/css-examples/multi-column-layout/column-rule.html",
