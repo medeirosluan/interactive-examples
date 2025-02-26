@@ -1,26 +1,39 @@
-function update(animation = "rotate") {
-  const el = document.getElementById("example-element");
-  /* Restart the animation
-          https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips */
-  el.className = "";
-  window.requestAnimationFrame(() => {
+'use strict';
+
+window.addEventListener('load', () => {
+  function update() {
+    const selected = document.querySelector('.selected');
+
+    /* Restart the animation
+           https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips */
+    el.className = '';
     window.requestAnimationFrame(() => {
-      el.className = animation;
+      window.requestAnimationFrame(() => {
+        el.className =
+          el.style.transformOrigin.split(' ')[2] === '60px'
+            ? 'rotate3d'
+            : 'rotate';
+      });
     });
+
+    const transformOrigin = getComputedStyle(el).transformOrigin;
+    const pos = transformOrigin.split(/\s+/);
+    crosshair.style.left = `calc(${pos[0]} - 12px)`;
+    crosshair.style.top = `calc(${pos[1]} - 12px)`;
+  }
+
+  const crosshair = document.getElementById('crosshair');
+  const el = document.getElementById('example-element');
+
+  const observer = new MutationObserver(() => {
+    update();
   });
 
-  const transformOrigin = getComputedStyle(el).transformOrigin;
-  const pos = transformOrigin.split(/\s+/);
-  crosshair.style.left = `calc(${pos[0]} - 12px)`;
-  crosshair.style.top = `calc(${pos[1]} - 12px)`;
-}
+  observer.observe(el, {
+    attributes: true,
+    attributeFilter: ['style'],
+  });
 
-const crosshair = document.getElementById("crosshair");
-update();
-crosshair.style.opacity = "1";
-
-window.addEventListener("message", ({ data }) => {
-  if (data.typ === "choice") {
-    update(data.code.includes("3D rotation") ? "rotate3d" : "rotate");
-  }
+  update();
+  crosshair.style.opacity = '1';
 });
