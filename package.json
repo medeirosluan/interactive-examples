@@ -1,9 +1,9 @@
 {
   "name": "interactive-examples",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "Interactive code examples embedded on MDN",
   "author": "Mozilla",
-  "license": "MPL-2.0",
+  "license": "CC0-1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mdn/interactive-examples.git"
@@ -40,21 +40,21 @@
     "mozilla"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.6",
-    "@babel/eslint-parser": "^7.24.6",
-    "@mdn/bob": "^4.0.4",
+    "@babel/core": "^7.26.10",
+    "@babel/eslint-parser": "^7.27.0",
+    "@mdn/bob": "^6.0.0",
     "chokidar-cli": "^3.0.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "http-server": "^14.1.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.3.0",
+    "prettier": "^3.4.2",
     "prettier-eslint": "^16.2.0",
-    "stylelint": "^16.6.1",
-    "stylelint-prettier": "^5.0.0"
+    "stylelint": "^16.18.0",
+    "stylelint-prettier": "^5.0.3"
   }
 }

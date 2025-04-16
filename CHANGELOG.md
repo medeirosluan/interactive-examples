@@ -1,5 +1,50 @@
 # Changelog
 
+## [3.0.0](https://github.com/mdn/interactive-examples/compare/v2.7.0...v3.0.0) (2024-11-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** bump node from v18 to v20 ([#2859](https://github.com/mdn/interactive-examples/issues/2859))
+
+### Miscellaneous Chores
+
+* **deps:** bump node from v18 to v20 ([#2859](https://github.com/mdn/interactive-examples/issues/2859)) ([4fa2496](https://github.com/mdn/interactive-examples/commit/4fa2496346cfce33c3255b13891a6f6935be19c2))
+
+## [2.7.0](https://github.com/mdn/interactive-examples/compare/v2.6.1...v2.7.0) (2024-11-01)
+
+
+### Features
+
+* **css:** add auto examples for text-emphasis-position ([#2849](https://github.com/mdn/interactive-examples/issues/2849)) ([3eb4fa4](https://github.com/mdn/interactive-examples/commit/3eb4fa4f8a6072de1131f5c4fc58ae727f6e7fc7))
+
+
+### Bug Fixes
+
+* **ci:** check dependabot PR user instead of actor ([#2834](https://github.com/mdn/interactive-examples/issues/2834)) ([7bb336d](https://github.com/mdn/interactive-examples/commit/7bb336db1f01669831e38faeac5ba0dcd3732df9))
+* correct typo for text-transform value ([#2858](https://github.com/mdn/interactive-examples/issues/2858)) ([f577c01](https://github.com/mdn/interactive-examples/commit/f577c01d17d39d41f158590538159e90ac928af3))
+
+## [2.6.1](https://github.com/mdn/interactive-examples/compare/v2.6.0...v2.6.1) (2024-07-18)
+
+
+### Bug Fixes
+
+* place vendor-prefixed props first in declaration order ([#2812](https://github.com/mdn/interactive-examples/issues/2812)) ([182fa05](https://github.com/mdn/interactive-examples/commit/182fa0526b6415dd14b241ed8b9f750a27a68943))
+
+## [2.6.0](https://github.com/mdn/interactive-examples/compare/v2.5.1...v2.6.0) (2024-07-03)
+
+
+### Features
+
+* update editor recommendations ([#2800](https://github.com/mdn/interactive-examples/issues/2800)) ([7ee5969](https://github.com/mdn/interactive-examples/commit/7ee59696a7437e4d2035189bf8d6ff08b25551f5))
+
+## [2.5.1](https://github.com/mdn/interactive-examples/compare/v2.5.0...v2.5.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* **css:** add cue pseudo element with argument case ([#2787](https://github.com/mdn/interactive-examples/issues/2787)) ([0923c6c](https://github.com/mdn/interactive-examples/commit/0923c6c3a2bde867102704733266afd5b5a009ec))
+
 ## [2.5.0](https://github.com/mdn/interactive-examples/compare/v2.4.1...v2.5.0) (2024-05-03)
 
 
